@@ -1,0 +1,1509 @@
+{
+    "traceEvents": [
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 0,
+            "args": {
+                "name": "Allocators"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 1,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 2,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Tensors"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "NoOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218080,
+            "dur": 0,
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Arg",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218090,
+            "dur": 10,
+            "args": {
+                "name": "_arg_X_0_0",
+                "op": "_Arg"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218102,
+            "dur": 4,
+            "args": {
+                "name": "Reshape_1/shape",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Arg",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218107,
+            "dur": 2,
+            "args": {
+                "name": "_arg_Y__0_1",
+                "op": "_Arg"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218111,
+            "dur": 2,
+            "args": {
+                "name": "gradients/Sum_grad/Reshape",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218115,
+            "dur": 1,
+            "args": {
+                "name": "Reshape/shape",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218284,
+            "dur": 2,
+            "args": {
+                "name": "gradients/Ys_grad/Sum/reduction_indices",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218287,
+            "dur": 2,
+            "args": {
+                "name": "GradientDescent/learning_rate",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218290,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_0",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Shape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218294,
+            "dur": 8,
+            "args": {
+                "name": "gradients/mul_grad/Shape",
+                "op": "Shape",
+                "input0": "_arg_Y__0_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklReshape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218387,
+            "dur": 8,
+            "args": {
+                "name": "Reshape",
+                "op": "_MklReshape",
+                "input0": "_arg_X_0_0",
+                "input1": "Reshape/shape",
+                "input2": "DMT/_0",
+                "input3": "DMT/_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218398,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_2",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218402,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_3",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218404,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_17",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VarHandleOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218407,
+            "dur": 2,
+            "args": {
+                "name": "Variable",
+                "op": "VarHandleOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ReadVariableOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218495,
+            "dur": 3,
+            "args": {
+                "name": "Conv2D/ReadVariableOp",
+                "op": "ReadVariableOp",
+                "input0": "Variable"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218501,
+            "dur": 2,
+            "args": {
+                "name": "ConstantFolding/gradients/Conv2D_grad/ShapeN-matshapes-1",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VarHandleOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218505,
+            "dur": 12,
+            "args": {
+                "name": "Variable_5",
+                "op": "VarHandleOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ReadVariableOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218519,
+            "dur": 4,
+            "args": {
+                "name": "BiasAdd_2/ReadVariableOp",
+                "op": "ReadVariableOp",
+                "input0": "Variable_5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VarHandleOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218623,
+            "dur": 2,
+            "args": {
+                "name": "Variable_4",
+                "op": "VarHandleOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ReadVariableOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218626,
+            "dur": 2,
+            "args": {
+                "name": "MatMul/ReadVariableOp",
+                "op": "ReadVariableOp",
+                "input0": "Variable_4"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VarHandleOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218630,
+            "dur": 1,
+            "args": {
+                "name": "Variable_1",
+                "op": "VarHandleOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ReadVariableOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218633,
+            "dur": 1,
+            "args": {
+                "name": "BiasAdd/ReadVariableOp",
+                "op": "ReadVariableOp",
+                "input0": "Variable_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948218636,
+            "dur": 488,
+            "args": {
+                "name": "Relu",
+                "op": "_MklFusedConv2D",
+                "input0": "Reshape",
+                "input1": "Conv2D/ReadVariableOp",
+                "input2": "BiasAdd/ReadVariableOp",
+                "input3": "Reshape:1",
+                "input4": "DMT/_2",
+                "input5": "DMT/_3"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMaxPool",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948219137,
+            "dur": 503,
+            "args": {
+                "name": "MaxPool",
+                "op": "_MklMaxPool",
+                "input0": "Relu",
+                "input1": "Relu:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948219645,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_15",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948219648,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_4",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948219665,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_5",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948219669,
+            "dur": 2066,
+            "args": {
+                "name": "Mkl2Tf/_18",
+                "op": "_MklToTf",
+                "input0": "MaxPool",
+                "input1": "MaxPool:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VarHandleOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948221739,
+            "dur": 2,
+            "args": {
+                "name": "Variable_3",
+                "op": "VarHandleOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ReadVariableOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948221743,
+            "dur": 1,
+            "args": {
+                "name": "BiasAdd_1/ReadVariableOp",
+                "op": "ReadVariableOp",
+                "input0": "Variable_3"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VarHandleOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948221832,
+            "dur": 2,
+            "args": {
+                "name": "Variable_2",
+                "op": "VarHandleOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ReadVariableOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948221835,
+            "dur": 2,
+            "args": {
+                "name": "Conv2D_1/ReadVariableOp",
+                "op": "ReadVariableOp",
+                "input0": "Variable_2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ShapeN",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948221839,
+            "dur": 5,
+            "args": {
+                "name": "gradients/Conv2D_1_grad/ShapeN",
+                "op": "ShapeN",
+                "input0": "MaxPool",
+                "input1": "Conv2D_1/ReadVariableOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948221846,
+            "dur": 2,
+            "args": {
+                "name": "ConstantFolding/gradients/Conv2D_1_grad/ShapeN-matshapes-1",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948221849,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_16",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948221851,
+            "dur": 1684,
+            "args": {
+                "name": "Relu_1",
+                "op": "_MklFusedConv2D",
+                "input0": "MaxPool",
+                "input1": "Conv2D_1/ReadVariableOp",
+                "input2": "BiasAdd_1/ReadVariableOp",
+                "input3": "MaxPool:2",
+                "input4": "DMT/_4",
+                "input5": "DMT/_5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMaxPool",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948223540,
+            "dur": 290,
+            "args": {
+                "name": "MaxPool_1",
+                "op": "_MklMaxPool",
+                "input0": "Relu_1",
+                "input1": "Relu_1:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948223833,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_6",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklReshape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948223837,
+            "dur": 198,
+            "args": {
+                "name": "Reshape_1",
+                "op": "_MklReshape",
+                "input0": "MaxPool_1",
+                "input1": "Reshape_1/shape",
+                "input2": "MaxPool_1:2",
+                "input3": "DMT/_6"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224038,
+            "dur": 2,
+            "args": {
+                "name": "Mkl2Tf/_25",
+                "op": "_MklToTf",
+                "input0": "Reshape_1",
+                "input1": "Reshape_1:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224042,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_7",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224045,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_8",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedMatMul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224048,
+            "dur": 246,
+            "args": {
+                "name": "BiasAdd_2",
+                "op": "_MklFusedMatMul",
+                "input0": "Reshape_1",
+                "input1": "MatMul/ReadVariableOp",
+                "input2": "BiasAdd_2/ReadVariableOp",
+                "input3": "Reshape_1:1",
+                "input4": "DMT/_7",
+                "input5": "DMT/_8"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSoftmax",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224297,
+            "dur": 30,
+            "args": {
+                "name": "Ys",
+                "op": "_MklSoftmax",
+                "input0": "BiasAdd_2",
+                "input1": "BiasAdd_2:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224329,
+            "dur": 2,
+            "args": {
+                "name": "Mkl2Tf/_20",
+                "op": "_MklToTf",
+                "input0": "Ys",
+                "input1": "Ys:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Log",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224333,
+            "dur": 8,
+            "args": {
+                "name": "Log",
+                "op": "Log",
+                "input0": "Ys"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Shape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224344,
+            "dur": 3,
+            "args": {
+                "name": "gradients/mul_grad/Shape_1",
+                "op": "Shape",
+                "input0": "Log"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BroadcastGradientArgs",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224349,
+            "dur": 6,
+            "args": {
+                "name": "gradients/mul_grad/BroadcastGradientArgs",
+                "op": "BroadcastGradientArgs",
+                "input0": "gradients/mul_grad/Shape",
+                "input1": "gradients/mul_grad/Shape_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224358,
+            "dur": 4,
+            "args": {
+                "name": "mul",
+                "op": "Mul",
+                "input0": "Log",
+                "input1": "_arg_Y__0_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Shape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224364,
+            "dur": 3,
+            "args": {
+                "name": "gradients/Sum_grad/Shape",
+                "op": "Shape",
+                "input0": "mul"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Tile",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224453,
+            "dur": 13,
+            "args": {
+                "name": "gradients/Sum_grad/Tile",
+                "op": "Tile",
+                "input0": "gradients/Sum_grad/Reshape",
+                "input1": "gradients/Sum_grad/Shape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224468,
+            "dur": 2,
+            "args": {
+                "name": "gradients/mul_grad/Mul_1",
+                "op": "Mul",
+                "input0": "_arg_Y__0_1",
+                "input1": "gradients/Sum_grad/Tile"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Sum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224472,
+            "dur": 6,
+            "args": {
+                "name": "gradients/mul_grad/Sum_1",
+                "op": "Sum",
+                "input0": "gradients/mul_grad/Mul_1",
+                "input1": "gradients/mul_grad/BroadcastGradientArgs:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224481,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_9",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224484,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_10",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklReshape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224487,
+            "dur": 6,
+            "args": {
+                "name": "gradients/mul_grad/Reshape_1",
+                "op": "_MklReshape",
+                "input0": "gradients/mul_grad/Sum_1",
+                "input1": "gradients/mul_grad/Shape_1",
+                "input2": "DMT/_9",
+                "input3": "DMT/_10"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Reciprocal",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224495,
+            "dur": 5,
+            "args": {
+                "name": "gradients/Log_grad/Reciprocal",
+                "op": "Reciprocal",
+                "input0": "Ys",
+                "input1": "^gradients/mul_grad/Reshape_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224503,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_11",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224506,
+            "dur": 17,
+            "args": {
+                "name": "MklInputConversion/_31",
+                "op": "_MklInputConversion",
+                "input0": "gradients/Log_grad/Reciprocal",
+                "input1": "gradients/mul_grad/Reshape_1",
+                "input2": "DMT/_11",
+                "input3": "gradients/mul_grad/Reshape_1:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224526,
+            "dur": 8,
+            "args": {
+                "name": "gradients/Log_grad/mul",
+                "op": "_MklMul",
+                "input0": "gradients/Log_grad/Reciprocal",
+                "input1": "gradients/mul_grad/Reshape_1",
+                "input2": "DMT/_11",
+                "input3": "gradients/mul_grad/Reshape_1:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224537,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_12",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224540,
+            "dur": 7,
+            "args": {
+                "name": "MklInputConversion/_32",
+                "op": "_MklInputConversion",
+                "input0": "Ys",
+                "input1": "gradients/Log_grad/mul",
+                "input2": "Ys:1",
+                "input3": "gradients/Log_grad/mul:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224549,
+            "dur": 4,
+            "args": {
+                "name": "gradients/Ys_grad/mul",
+                "op": "_MklMul",
+                "input0": "Ys",
+                "input1": "gradients/Log_grad/mul",
+                "input2": "Ys:1",
+                "input3": "gradients/Log_grad/mul:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224555,
+            "dur": 1,
+            "args": {
+                "name": "Mkl2Tf/_22",
+                "op": "_MklToTf",
+                "input0": "gradients/Ys_grad/mul",
+                "input1": "gradients/Ys_grad/mul:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Sum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224559,
+            "dur": 10,
+            "args": {
+                "name": "gradients/Ys_grad/Sum",
+                "op": "Sum",
+                "input0": "gradients/Ys_grad/mul",
+                "input1": "gradients/Ys_grad/Sum/reduction_indices"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224653,
+            "dur": 7,
+            "args": {
+                "name": "MklInputConversion/_33",
+                "op": "_MklInputConversion",
+                "input0": "gradients/Log_grad/mul",
+                "input1": "gradients/Ys_grad/Sum",
+                "input2": "gradients/Log_grad/mul:1",
+                "input3": "DMT/_12"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSub",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224662,
+            "dur": 20,
+            "args": {
+                "name": "gradients/Ys_grad/sub",
+                "op": "_MklSub",
+                "input0": "gradients/Log_grad/mul",
+                "input1": "gradients/Ys_grad/Sum",
+                "input2": "gradients/Log_grad/mul:1",
+                "input3": "DMT/_12"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklInputConversion",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224684,
+            "dur": 6,
+            "args": {
+                "name": "MklInputConversion/_34",
+                "op": "_MklInputConversion",
+                "input0": "Ys",
+                "input1": "gradients/Ys_grad/sub",
+                "input2": "Ys:1",
+                "input3": "gradients/Ys_grad/sub:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224692,
+            "dur": 5,
+            "args": {
+                "name": "gradients/Ys_grad/mul_1",
+                "op": "_MklMul",
+                "input0": "Ys",
+                "input1": "gradients/Ys_grad/sub",
+                "input2": "Ys:1",
+                "input3": "gradients/Ys_grad/sub:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224699,
+            "dur": 2,
+            "args": {
+                "name": "Mkl2Tf/_23",
+                "op": "_MklToTf",
+                "input0": "gradients/Ys_grad/mul_1",
+                "input1": "gradients/Ys_grad/mul_1:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAddGrad",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224703,
+            "dur": 7,
+            "args": {
+                "name": "gradients/BiasAdd_2_grad/BiasAddGrad",
+                "op": "BiasAddGrad",
+                "input0": "gradients/Ys_grad/mul_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMatMul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224712,
+            "dur": 37,
+            "args": {
+                "name": "gradients/MatMul_grad/MatMul_1",
+                "op": "_MklMatMul",
+                "input0": "Reshape_1",
+                "input1": "gradients/Ys_grad/mul_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMatMul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224754,
+            "dur": 30,
+            "args": {
+                "name": "gradients/MatMul_grad/MatMul",
+                "op": "_MklMatMul",
+                "input0": "gradients/Ys_grad/mul_1",
+                "input1": "MatMul/ReadVariableOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224787,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_13",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224790,
+            "dur": 1,
+            "args": {
+                "name": "DMT/_14",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ResourceApplyGradientDescent",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224793,
+            "dur": 72,
+            "args": {
+                "name": "GradientDescent/update_Variable_4/ResourceApplyGradientDescent",
+                "op": "ResourceApplyGradientDescent",
+                "input0": "Variable_4",
+                "input1": "GradientDescent/learning_rate",
+                "input2": "gradients/MatMul_grad/MatMul_1",
+                "input3": "^gradients/MatMul_grad/MatMul"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ResourceApplyGradientDescent",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224868,
+            "dur": 3,
+            "args": {
+                "name": "GradientDescent/update_Variable_5/ResourceApplyGradientDescent",
+                "op": "ResourceApplyGradientDescent",
+                "input0": "Variable_5",
+                "input1": "GradientDescent/learning_rate",
+                "input2": "gradients/BiasAdd_2_grad/BiasAddGrad"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948224874,
+            "dur": 128,
+            "args": {
+                "name": "Mkl2Tf/_19",
+                "op": "_MklToTf",
+                "input0": "MaxPool_1",
+                "input1": "MaxPool_1:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Shape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948225005,
+            "dur": 4,
+            "args": {
+                "name": "gradients/Reshape_1_grad/Shape",
+                "op": "Shape",
+                "input0": "MaxPool_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklReshape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948225010,
+            "dur": 6,
+            "args": {
+                "name": "gradients/Reshape_1_grad/Reshape",
+                "op": "_MklReshape",
+                "input0": "gradients/MatMul_grad/MatMul",
+                "input1": "gradients/Reshape_1_grad/Shape",
+                "input2": "DMT/_13",
+                "input3": "DMT/_14"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMaxPoolGrad",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948225018,
+            "dur": 126,
+            "args": {
+                "name": "gradients/MaxPool_1_grad/MaxPoolGrad",
+                "op": "_MklMaxPoolGrad",
+                "input0": "Relu_1",
+                "input1": "MaxPool_1",
+                "input2": "gradients/Reshape_1_grad/Reshape",
+                "input3": "MaxPool_1:1",
+                "input4": "Relu_1:2",
+                "input5": "MaxPool_1:2",
+                "input6": "gradients/Reshape_1_grad/Reshape:1",
+                "input7": "MaxPool_1:3"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklReluGrad",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948225147,
+            "dur": 198,
+            "args": {
+                "name": "gradients/Relu_1_grad/ReluGrad",
+                "op": "_MklReluGrad",
+                "input0": "gradients/MaxPool_1_grad/MaxPoolGrad",
+                "input1": "Relu_1",
+                "input2": "gradients/MaxPool_1_grad/MaxPoolGrad:1",
+                "input3": "Relu_1:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948225348,
+            "dur": 44,
+            "args": {
+                "name": "Mkl2Tf/_27",
+                "op": "_MklToTf",
+                "input0": "gradients/Relu_1_grad/ReluGrad",
+                "input1": "gradients/Relu_1_grad/ReluGrad:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAddGrad",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948225395,
+            "dur": 580,
+            "args": {
+                "name": "gradients/BiasAdd_1_grad/BiasAddGrad",
+                "op": "BiasAddGrad",
+                "input0": "gradients/Relu_1_grad/ReluGrad"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklConv2DBackpropInput",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948225980,
+            "dur": 1141,
+            "args": {
+                "name": "gradients/Conv2D_1_grad/Conv2DBackpropInput",
+                "op": "_MklConv2DBackpropInput",
+                "input0": "gradients/Conv2D_1_grad/ShapeN",
+                "input1": "Relu_1:1",
+                "input2": "gradients/Relu_1_grad/ReluGrad",
+                "input3": "DMT/_16",
+                "input4": "Relu_1:3",
+                "input5": "gradients/Relu_1_grad/ReluGrad:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklConv2DBackpropFilter",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948227131,
+            "dur": 13386,
+            "args": {
+                "name": "gradients/Conv2D_1_grad/Conv2DBackpropFilter",
+                "op": "_MklConv2DBackpropFilter",
+                "input0": "MaxPool",
+                "input1": "ConstantFolding/gradients/Conv2D_1_grad/ShapeN-matshapes-1",
+                "input2": "gradients/Relu_1_grad/ReluGrad",
+                "input3": "MaxPool:2",
+                "input4": "DMT/_15",
+                "input5": "gradients/Relu_1_grad/ReluGrad:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948240613,
+            "dur": 4,
+            "args": {
+                "name": "Mkl2Tf/_28",
+                "op": "_MklToTf",
+                "input0": "gradients/Conv2D_1_grad/Conv2DBackpropFilter",
+                "input1": "gradients/Conv2D_1_grad/Conv2DBackpropFilter:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ResourceApplyGradientDescent",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948240620,
+            "dur": 488,
+            "args": {
+                "name": "GradientDescent/update_Variable_2/ResourceApplyGradientDescent",
+                "op": "ResourceApplyGradientDescent",
+                "input0": "Variable_2",
+                "input1": "GradientDescent/learning_rate",
+                "input2": "gradients/Conv2D_1_grad/Conv2DBackpropFilter",
+                "input3": "^gradients/Conv2D_1_grad/Conv2DBackpropInput"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMaxPoolGrad",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948241115,
+            "dur": 2761,
+            "args": {
+                "name": "gradients/MaxPool_grad/MaxPoolGrad",
+                "op": "_MklMaxPoolGrad",
+                "input0": "Relu",
+                "input1": "MaxPool",
+                "input2": "gradients/Conv2D_1_grad/Conv2DBackpropInput",
+                "input3": "MaxPool:1",
+                "input4": "Relu:2",
+                "input5": "MaxPool:2",
+                "input6": "gradients/Conv2D_1_grad/Conv2DBackpropInput:1",
+                "input7": "MaxPool:3"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklReluGrad",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948243883,
+            "dur": 591,
+            "args": {
+                "name": "gradients/Relu_grad/ReluGrad",
+                "op": "_MklReluGrad",
+                "input0": "gradients/MaxPool_grad/MaxPoolGrad",
+                "input1": "Relu",
+                "input2": "gradients/MaxPool_grad/MaxPoolGrad:1",
+                "input3": "Relu:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948244476,
+            "dur": 349,
+            "args": {
+                "name": "Mkl2Tf/_29",
+                "op": "_MklToTf",
+                "input0": "gradients/Relu_grad/ReluGrad",
+                "input1": "gradients/Relu_grad/ReluGrad:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAddGrad",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948244830,
+            "dur": 3380,
+            "args": {
+                "name": "gradients/BiasAdd_grad/BiasAddGrad",
+                "op": "BiasAddGrad",
+                "input0": "gradients/Relu_grad/ReluGrad"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklConv2DBackpropFilter",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948248215,
+            "dur": 17848,
+            "args": {
+                "name": "gradients/Conv2D_grad/Conv2DBackpropFilter",
+                "op": "_MklConv2DBackpropFilter",
+                "input0": "Reshape",
+                "input1": "ConstantFolding/gradients/Conv2D_grad/ShapeN-matshapes-1",
+                "input2": "gradients/Relu_grad/ReluGrad",
+                "input3": "Reshape:1",
+                "input4": "DMT/_17",
+                "input5": "gradients/Relu_grad/ReluGrad:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948266068,
+            "dur": 4,
+            "args": {
+                "name": "Mkl2Tf/_30",
+                "op": "_MklToTf",
+                "input0": "gradients/Conv2D_grad/Conv2DBackpropFilter",
+                "input1": "gradients/Conv2D_grad/Conv2DBackpropFilter:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ResourceApplyGradientDescent",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948266074,
+            "dur": 12,
+            "args": {
+                "name": "GradientDescent/update_Variable/ResourceApplyGradientDescent",
+                "op": "ResourceApplyGradientDescent",
+                "input0": "Variable",
+                "input1": "GradientDescent/learning_rate",
+                "input2": "gradients/Conv2D_grad/Conv2DBackpropFilter"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ResourceApplyGradientDescent",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948266089,
+            "dur": 3,
+            "args": {
+                "name": "GradientDescent/update_Variable_1/ResourceApplyGradientDescent",
+                "op": "ResourceApplyGradientDescent",
+                "input0": "Variable_1",
+                "input1": "GradientDescent/learning_rate",
+                "input2": "gradients/BiasAdd_grad/BiasAddGrad"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "ResourceApplyGradientDescent",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948266179,
+            "dur": 3,
+            "args": {
+                "name": "GradientDescent/update_Variable_3/ResourceApplyGradientDescent",
+                "op": "ResourceApplyGradientDescent",
+                "input0": "Variable_3",
+                "input1": "GradientDescent/learning_rate",
+                "input2": "gradients/BiasAdd_1_grad/BiasAddGrad"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "NoOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1599867948266184,
+            "dur": 0,
+            "args": {
+                "name": "GradientDescent",
+                "op": "NoOp",
+                "input0": "^GradientDescent/update_Variable/ResourceApplyGradientDescent",
+                "input1": "^GradientDescent/update_Variable_1/ResourceApplyGradientDescent",
+                "input2": "^GradientDescent/update_Variable_2/ResourceApplyGradientDescent",
+                "input3": "^GradientDescent/update_Variable_3/ResourceApplyGradientDescent",
+                "input4": "^GradientDescent/update_Variable_4/ResourceApplyGradientDescent",
+                "input5": "^GradientDescent/update_Variable_5/ResourceApplyGradientDescent"
+            }
+        }
+    ]
+}

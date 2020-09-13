@@ -1,0 +1,427 @@
+{
+    "traceEvents": [
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 0,
+            "args": {
+                "name": "Allocators"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 1,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 2,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Tensors"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "NoOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781131,
+            "dur": 0,
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781250,
+            "dur": 13,
+            "args": {
+                "name": "Reshape/shape",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781265,
+            "dur": 2,
+            "args": {
+                "name": "Variable",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Arg",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781268,
+            "dur": 3,
+            "args": {
+                "name": "_arg_X_0_0",
+                "op": "_Arg"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781273,
+            "dur": 2,
+            "args": {
+                "name": "Variable_4",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781277,
+            "dur": 1,
+            "args": {
+                "name": "Variable_3",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781280,
+            "dur": 2,
+            "args": {
+                "name": "Reshape_1/shape",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781283,
+            "dur": 2,
+            "args": {
+                "name": "Variable_5",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781287,
+            "dur": 3,
+            "args": {
+                "name": "Variable_2",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781292,
+            "dur": 3,
+            "args": {
+                "name": "Variable_1",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781297,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_0",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklReshape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781301,
+            "dur": 15,
+            "args": {
+                "name": "Reshape",
+                "op": "_MklReshape",
+                "input0": "_arg_X_0_0",
+                "input1": "Reshape/shape",
+                "input2": "DMT/_0",
+                "input3": "DMT/_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781320,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_2",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781324,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_3",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781327,
+            "dur": 259,
+            "args": {
+                "name": "Relu",
+                "op": "_MklFusedConv2D",
+                "input0": "Reshape",
+                "input1": "Variable",
+                "input2": "Variable_1",
+                "input3": "Reshape:1",
+                "input4": "DMT/_2",
+                "input5": "DMT/_3"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMaxPool",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493781820,
+            "dur": 298,
+            "args": {
+                "name": "MaxPool",
+                "op": "_MklMaxPool",
+                "input0": "Relu",
+                "input1": "Relu:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493782123,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_4",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493782128,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_5",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedConv2D",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493782132,
+            "dur": 13749,
+            "args": {
+                "name": "Relu_1",
+                "op": "_MklFusedConv2D",
+                "input0": "MaxPool",
+                "input1": "Variable_2",
+                "input2": "Variable_3",
+                "input3": "MaxPool:2",
+                "input4": "DMT/_4",
+                "input5": "DMT/_5"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklMaxPool",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493796001,
+            "dur": 194,
+            "args": {
+                "name": "MaxPool_1",
+                "op": "_MklMaxPool",
+                "input0": "Relu_1",
+                "input1": "Relu_1:2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493796200,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_6",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklReshape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493796204,
+            "dur": 258,
+            "args": {
+                "name": "Reshape_1",
+                "op": "_MklReshape",
+                "input0": "MaxPool_1",
+                "input1": "Reshape_1/shape",
+                "input2": "MaxPool_1:2",
+                "input3": "DMT/_6"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493796466,
+            "dur": 3,
+            "args": {
+                "name": "DMT/_7",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493796470,
+            "dur": 2,
+            "args": {
+                "name": "DMT/_8",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklFusedMatMul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493796474,
+            "dur": 267,
+            "args": {
+                "name": "BiasAdd_2",
+                "op": "_MklFusedMatMul",
+                "input0": "Reshape_1",
+                "input1": "Variable_4",
+                "input2": "Variable_5",
+                "input3": "Reshape_1:1",
+                "input4": "DMT/_7",
+                "input5": "DMT/_8"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklSoftmax",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493796744,
+            "dur": 31,
+            "args": {
+                "name": "Ys",
+                "op": "_MklSoftmax",
+                "input0": "BiasAdd_2",
+                "input1": "BiasAdd_2:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_MklToTf",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493796778,
+            "dur": 3,
+            "args": {
+                "name": "Mkl2Tf/_9",
+                "op": "_MklToTf",
+                "input0": "Ys",
+                "input1": "Ys:1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Retval",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1600002493796783,
+            "dur": 2,
+            "args": {
+                "name": "_retval_Ys_0_0",
+                "op": "_Retval",
+                "input0": "Ys"
+            }
+        }
+    ]
+}
